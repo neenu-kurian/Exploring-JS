@@ -1,0 +1,12 @@
+body {
+  font-size: 16px; }
+
+#searchBar {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px; }
+  #searchBar input {
+    width: 80%;
+    height: 2em; }
+  #searchBar button {
+    padding: 0.3em; }

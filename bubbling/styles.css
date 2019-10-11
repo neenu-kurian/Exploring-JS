@@ -1,0 +1,25 @@
+.form-element {
+	margin: 10px;
+	cursor: pointer;
+	width: 20%;
+	border: 1px solid blue;
+	padding: 10px;
+}
+ 
+  .form-element > div {
+	  border: 1px solid blue;
+	  padding: 10px;
+  }
+
+  .form-element > div > p {
+	  border: 1px solid blue;
+	  padding: 10px;
+  }
+
+  p {
+	  margin: 0;
+  }
+
+  .explanation {
+	  border:none;
+  }

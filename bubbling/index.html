@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <script src="script.js"></script>
+</head>
+<body>
+	<h1>Bubbing</h1>
+  <form class="form-element" onclick="alert('form')">FORM
+  <div onclick="alert('div')">DIV
+    <p onclick="alert('p')">P</p>
+  </div>
+</form>
+<div class="explanation">
+	So if we click on p elements, then we’ll see 3 alerts: p → div → form.
+    The process is called “bubbling”, because events “bubble” from the inner element up through parents like a bubble in the water.
+</div>
+
+<hr>
+<hr>
+  <h1>Without Bubbling</h1>
+  <form class="form-element" onclick="alert('form')">FORM
+  <div onclick="alert('div')">DIV
+    <p onclick="event.stopPropagation()">P</p>
+  </div>
+</form>
+<div class="explanation">
+	The bubbling does not go to div on clicking the innermost p I have given stopPropagation();
+</div>
+
+
+</body>
+</html>
