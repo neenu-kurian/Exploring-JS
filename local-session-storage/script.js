@@ -1,3 +1,9 @@
-localStorage.setItem('test', 1);
+localStorage.setItem('localstorage', 1);
 
-alert(localStorage.getItem('test')); 
+for (let i = 0; i < localStorage.length; i++) {
+  let key = localStorage.key(i);
+  console.log(`${key}: ${localStorage.getItem(key)}`);
+}
+
+sessionStorage.setItem('sessionstorage', 1);
+console.log('sessionstorage',sessionStorage.getItem('sessionstorage'));
