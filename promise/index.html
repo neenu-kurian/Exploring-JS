@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+  <script src="script.js"></script>
+</head>
+<body>
+   <div>
+      The Promise object represents the eventual completion (or failure) of an asynchronous operation, and its resulting value. 
+      Its arguments resolve and reject are callbacks provided by JavaScript itself. 
+      When the executor obtains the result, be it soon or late – doesn’t matter, it should call one of these callbacks:
+
+        resolve(value) — if the job finished successfully, with result value.
+        reject(error) — if an error occurred, error is the error object.
+      
+        finally always runs when the promise is settled: be it resolve or reject.
+
+        finally is a good handler for performing cleanup, e.g. stopping our loading indicators, as they are not needed anymore, no matter what the outcome is
+
+   </div>
+</body>
+</html>
