@@ -22,6 +22,7 @@ Promise.all(requests).then(responses =>
   responses.forEach(response => alert(`${response.url}: ${response.status}`))
 );
 
+//when you return a promise using fetch in the above example, we are returning it before it is resolved. In Promise.all, actually we wait for promise to be resolved.
 
 //assuming that you have to perform huge number of async operations like sendng bulk marketting emails to thousands of users.Simple code will be:
 //for (let i=0;i<100;i++) { sendEmailtoUser(user[i]);}
@@ -42,3 +43,4 @@ Promise.all(requests).then(responses =>
 //   await Promise.all(requests)
 //   .catch(e => console.log(`Error in sending email for the batch ${i} - ${e}`)) 
 // }
+
